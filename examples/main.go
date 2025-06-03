@@ -2,7 +2,7 @@ package main
 
 import (
 	"time"
-	"github.com/William-Gardner-Biotech/polybar"
+	"github.com/William-Gardner-Biotech/polybar/polybar"
 )
 
 func main() {
