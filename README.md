@@ -16,8 +16,6 @@ A Go package that provides a DNA-style progress bar with base complementing, des
 go get github.com/yourusername/polybar
 ```
 
-## Usage
-
 ### Basic Usage
 
 ```go
@@ -59,16 +57,10 @@ pb.SetProgress(500)  // 50% complete
 pb.Finish()
 ```
 
-## Output Example
+## CLI usage
 
-```
-DNA-SEQUENCING
-┬┬┬┬┬┬┬┬┬┬┬┬┬┬
-ATCG-NNTA-G
-TAGC-NNAT-C
-┴┴┴┴┴┴┴┴┴┴┴====>
-75.0% (75/100)
-```
+![Made with VHS](https://vhs.charm.sh/vhs-5C9B844TrUsQvQ61Leg8bj.gif)
+
 
 ## DNA Complement Rules
 
