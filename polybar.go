@@ -139,7 +139,7 @@ func (pb *ProgressBar) render() {
 	}
 
 	// Line 1: prepend "5'" then zipper characters for full width
-	lineZipper := "5'" + strings.Repeat(zipperChar, pb.width)
+	lineZipper := "3'" + strings.Repeat(zipperChar, pb.width)
 
 	// Line 2: two dashes + the first pos bases of topStrand
 	var lineTop string
@@ -160,9 +160,9 @@ func (pb *ProgressBar) render() {
 	// Line 4: prepend "3'" then baseChar repeated pos times, followed by arrowText
 	var linePrimer string
 	if pos < pb.width {
-		linePrimer = "3'" + strings.Repeat(baseChar, pos) + arrowText
+		linePrimer = "5'" + strings.Repeat(baseChar, pos) + arrowText
 	} else {
-		linePrimer = "3'" + strings.Repeat(baseChar, pb.width) + arrowText
+		linePrimer = "5'" + strings.Repeat(baseChar, pb.width) + arrowText
 	}
 
 	// Line 5: percentage and completed/total
